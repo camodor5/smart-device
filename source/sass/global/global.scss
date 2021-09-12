@@ -5,11 +5,14 @@ img {
 
 .page {
   min-width: 320px;
+  min-height: 100vh;
   display: grid;
-  grid-template-rows:auto 1fr auto ;
+  grid-template-rows: auto 1fr auto;
   box-sizing: border-box;
   font-family: "Roboto Condensed", "Helvetica", sans-serif;
 }
+
+
 
 a {
   text-decoration: none;
@@ -23,3 +26,4 @@ li {
 ul {
   padding-left: 0;
 }
+
