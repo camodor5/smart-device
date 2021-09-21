@@ -20,7 +20,7 @@ const contactsToggler = document.querySelector('.contacts__toggler');
 const menu = document.querySelector('.menu__wrapper');
 const contacts = document.querySelector('.contacts__list');
 
-if ( document.documentElement.clientWidth < 768 ){
+if ( document.documentElement.clientWidth < 768){
   menuToggler.classList.remove('menu__toggler--opened');
   menuToggler.classList.add('menu__toggler--closed');
   contactsToggler.classList.remove('contacts__toggler--opened');

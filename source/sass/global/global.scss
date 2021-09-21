@@ -10,6 +10,9 @@ img {
   grid-template-rows: auto 1fr auto;
   box-sizing: border-box;
   font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  &--popup {
+    overflow: hidden;
+  };
 }
 
 
@@ -27,3 +30,24 @@ ul {
   padding-left: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: -1px;
+  left: 0;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

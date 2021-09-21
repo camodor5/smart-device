@@ -1,0 +1,21 @@
+.about {
+  padding: 112px 25px 0px;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about__info {
+  max-width: 1194px;
+  margin: 0 auto;
+}
+

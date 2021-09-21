@@ -1,0 +1,103 @@
+.offer {
+  display: block;
+  height: 620px;
+  max-width: 370px;
+  position: relative;
+  @media (max-width: $tablet-width) {
+    width: 720px;
+    max-width: unset;
+    height: 256px;
+    margin: 0 auto;
+  }
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.offer::after {
+  content: "";
+  width: 63px;
+  height: 63px;
+  display: block;
+  background: url("../../img/arrow-right.svg") no-repeat 32px center;
+  background-color: $blue;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.offer--producing::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("../../img/producing.png") no-repeat center center;
+  opacity: 0.2;
+  @media (max-width: $tablet-width) {
+    background-image: url("../../img/producing-tablet.png");
+  }
+  @media (max-width: $mobile-width) {
+    background-image: url("../../img/producing-mobile.png");
+    background-size: cover;
+  }
+}
+
+.offer--mounting::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("../../img/mounting.png") no-repeat center center;
+  opacity: 0.2;
+  @media (max-width: $tablet-width) {
+    background-size: 1969px auto;
+  }
+  @media (max-width: $mobile-width) {
+    background-image: url("../../img/mounting-mobile.png");
+    background-size: auto auto;
+  }
+}
+
+.offer--accessories::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("../../img/accessories.png") no-repeat center center;
+  opacity: 0.2;
+
+  @media (max-width: $tablet-width) {
+    background-size: 1206px auto;
+  }
+  @media (max-width: $mobile-width) {
+    background-image: url("../../img/accessories-mobile.png");
+    background-size: cover;
+  }
+}
+
+.offer__title {
+  font-family: "Roboto Condensed";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 53px;
+  margin-left: 44px;
+  width: 170px;
+  @media (max-width: $tablet-width) {
+    margin-top: 43px;
+    margin-left: 44px;
+  }
+  @media (max-width: $mobile-width) {
+    margin-top: 23px;
+    margin-left: 35px;
+  }
+}
